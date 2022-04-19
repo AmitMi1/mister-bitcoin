@@ -1,0 +1,20 @@
+.contact-list {
+    border-radius: 3px;
+    margin-block-start: 20px;
+    height: calc(100vh - 260px);
+    overflow-y: auto;
+
+    @media (max-width: 450px) {
+        // height: calc(100vh - 315px);
+    }
+}
+
+.contact-page {
+
+    .btn-link {
+        @include customBtn;
+        position: absolute;
+        right: 20px;
+        bottom: 65px;
+    }
+}

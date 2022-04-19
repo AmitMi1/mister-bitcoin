@@ -1,0 +1,64 @@
+.contact-details {
+    // position: relative;
+    // height: 100%;
+    height: calc(100vh - 85px);
+    // overflow-y: auto;
+    // // position: relative;
+
+    // @media (max-width: 450px) {
+    //     height: calc(100vh - 140px);
+    // }
+
+    .actions {
+        // position: fixed;
+        // width: 100%;
+        // justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+
+    a {
+        @include customBtn;
+        background-color: rgb(14, 107, 228);
+        // bottom: 0px;
+    }
+
+    .btn-remove {
+        @include customBtn;
+        background-color: rgba(255, 255, 255, 0.25);
+        border-color: #db2525;
+        color: #db2525;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+
+        &:active {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        div {
+            svg {
+                &:first-child {
+                    margin-block-start: 18px;
+                    margin-inline-start: -1px;
+                }
+
+
+            }
+        }
+    }
+
+    .contact-img {
+        height: 180px;
+        border: 4px solid rgba(105, 105, 105, 0.5);
+        border-radius: 50%;
+        padding: 5px;
+        margin-block-end: 10px;
+        background-color: rgba(255, 255, 255, 0.25);
+    }
+
+    p {
+        font-size: 20px;
+        margin-block-end: 10px;
+    }
+}

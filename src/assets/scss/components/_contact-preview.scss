@@ -1,0 +1,38 @@
+.contact-preview {
+    &:not(:last-child) {
+        border-bottom: 1px solid rgba(245, 245, 245, 0.5);
+    }
+
+    a {
+
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.05);
+        // margin-block-end: 10px;
+        // border-radius: 50px;
+        height: 100px;
+        padding-inline-start: 25px;
+        cursor: pointer;
+        transition: background-color .2s ease-in-out;
+        color: whitesmoke;
+        text-decoration: none;
+
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            text-decoration: underline;
+
+            .contact-img {
+                border: 3px solid rgba(0, 0, 0, 0.1);
+            }
+        }
+
+        .contact-img {
+            margin-inline-end: 10px;
+            height: 100%;
+            border-radius: 50px;
+            border: 3px solid rgba(85, 83, 83, 0);
+            padding: 4px;
+            transition: all .2s ease-in;
+        }
+    }
+}
